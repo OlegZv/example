@@ -1,6 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
-import SomeConfig from './components/SomeConfig';
+import logo from "./logo.svg";
+import "./App.css";
+import SomeConfig from "./components/SomeConfig";
+import WorkingConfig from "./components/WorkingConfig";
 
 function App() {
   return (
@@ -19,6 +20,11 @@ function App() {
           Learn React
         </a>
       </header>
+      <p>Working input:</p>
+      <WorkingConfig />
+      <p>
+        Not working input:
+      </p>
       <SomeConfig />
     </div>
   );

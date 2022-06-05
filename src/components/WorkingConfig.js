@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import { configDefaults } from "../components/someConfigDefault";
 import { useState } from "react";
 import Box from "@mui/material/Box";
-import NumericConfigInput from "../components/NumericConfigInput";
+import WorkingNumericInput from "../components/WorkingNumericInput";
 
-const SomeConfig = () => {
+const WorkingConfig = () => {
   // The idea of this component: render a bunch of input field for each separate config item
   // When the input changes (whether numeric OR checkbox):
   // 1. validate config for max and min
@@ -60,7 +60,7 @@ const SomeConfig = () => {
             {configDefaults.map((config) => {
               console.log("Rendering config input: " + config.name);
               return (
-                <NumericConfigInput
+                <WorkingNumericInput
                   key={config.id}
                   config={config}
                   updateValue={onConfigChange}
@@ -82,4 +82,4 @@ const SomeConfig = () => {
   );
 };
 
-export default SomeConfig;
+export default WorkingConfig;
